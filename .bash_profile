@@ -4,3 +4,4 @@ export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 alias ls='ls -GFh'
 alias marloc='grip' # grip is a tool that runs markdown files locally
+alias ll='ls -l'
