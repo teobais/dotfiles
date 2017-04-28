@@ -1,0 +1,15 @@
+[user]
+	email = thodoris.bais@gmail.com
+	name = Thodoris Bais
+[alias]
+    first =  log --pretty='%C(yellow)commit %H%nDate:\t%ad%nAuthor: %an <%ae>%n%n\t%s' --max-parents=0
+    last = log -1 HEAD
+    ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+    ld = log --pretty=format:"%C(yellow)%h\\ %C(green)%ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short --graph
+    ls = log --pretty=format:"%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    pu = push --tags
+[color]  
+    diff = auto  
+    status = auto  
+    branch = auto 
