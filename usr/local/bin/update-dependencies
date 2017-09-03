@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Updates package.json dependencies to their latest version.
+# Assumes package npm-check-updates is already installed.
+
+npm-check-updates -u # performs dependencies' updates
+npm install 	     # reinstalls dependencies that reside on package.json
