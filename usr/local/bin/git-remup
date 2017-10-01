@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# Update all of the branches set to track remote ones, deletes the outdated ones and pulls the latest HEAD of the current branch.
+git remote update --prune
+git pull
