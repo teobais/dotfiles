@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Assumes there is already a new percircle version in master branch.
+# Copies index.html, percircle.js, percircle.css to gh-pages
+
+git cp master index.html
+git cp master dist/js/percircle.js
+git cp master dist/css/percircle.css 
