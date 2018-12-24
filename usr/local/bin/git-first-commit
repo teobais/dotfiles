@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# Displays the date of the first commit of the current git repo.
+git log --reverse | sed -n 3p
