@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Pushes the newly created branched to the remote origin. Uses git-current-branch script to retrieve the name of the current branch.
+# Ideally, we use same naming between local and remote branches.
+
+git push -u origin $(git-current-branch)
+
