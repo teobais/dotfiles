@@ -5,3 +5,4 @@
 git fetch upstream
 git checkout master
 git rebase upstream/master # it is important to rebase (nstead of merging) at this point, in order to avoid any merge conflicts
+git push -f
