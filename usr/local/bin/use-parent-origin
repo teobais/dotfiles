@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# This script can be used in case one initially forked a repo, but after some time wants to work directly with the parent origin. The latter requires the individual to be part of the specific github organisation.
+# Replaces upstream with origin, by removing initial origin and renaming upstream to origin.
+
+git remote rm origin
+git remote rename upstream origin
