@@ -27,6 +27,16 @@ Alternatively, to update while avoiding the confirmation prompt:
 set -- -f; source bootstrap.sh
 ```
 
+### Specify the `$PATH`
+
+If `~/.path` exists, it will be sourced along with the other files, before any feature testing takes place.
+
+Here’s an example `~/.path` file that adds `/usr/local/bin` to the `$PATH`:
+
+```bash
+export PATH="/usr/local/bin:$PATH"
+```
+
 ## Local changes
 - For any new update on the `.bash_profile`, ensure that you run `bash -l` afterwards, so that the changes take effect.
 - Scripts under /usr/local/bin have to have the proper permissions, so that they can be run outside of the latter directory (=globally). Ensure that by `chmod 755 [name-of-the-newly-added-script]`
